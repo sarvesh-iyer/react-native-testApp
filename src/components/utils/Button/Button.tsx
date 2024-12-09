@@ -9,6 +9,8 @@ const Button = (props: ButtonProps) => {
 	let {
 		variant,
         title,
+        btnClass,
+        textClass,
 	} = props;
 
 
@@ -41,8 +43,8 @@ const Button = (props: ButtonProps) => {
 	`;
 
 	return (
-		<StyledButton>
-			<SyledText>{title}</SyledText>
+		<StyledButton className={btnClass}>
+			<SyledText className={textClass}>{title}</SyledText>
 		</StyledButton>
 	);
 };

@@ -9,6 +9,7 @@ const StyledText = (props: TextProps) => {
     let {
         type,
         weight,
+        classname,
     } = props;
 
     const getFontWeightValue = (weightText?: String) => {
@@ -53,7 +54,7 @@ const StyledText = (props: TextProps) => {
         `
 
     return (
-        <StylizedText>{props.children}</StylizedText>
+        <StylizedText className={classname} >{props.children}</StylizedText>
     );
 };
 
