@@ -17,12 +17,12 @@ const Button = (props: ButtonProps) => {
 	const StyledButton = variant === 'white' ?
     styled.View`
         border-radius: 8px;
-        padding: 16px;
+        padding: 14px 16px;
         background-color: ${colors.base_white};
     `
     : styled.View`
 		border-radius: 8px;
-		padding: 16px;
+		padding: 14px 16px;
 		background-color: ${variant === 'primary' ? colors.accent : colors.transparent};
 		border: ${variant !== 'primary' ? `1px solid ${colors.light_gray}` : 'none'};
     `;

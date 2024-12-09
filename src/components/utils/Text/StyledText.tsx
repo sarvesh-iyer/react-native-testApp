@@ -51,7 +51,7 @@ const StyledText = (props: TextProps) => {
             font-size: 16px;
             line-height: 28px;
             font-weight: ${getFontWeightValue(weight)};
-        `
+        `;
 
     return (
         <StylizedText className={classname} >{props.children}</StylizedText>

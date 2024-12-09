@@ -6,6 +6,7 @@ export const colors = {
     accent: 'rgb(0 78 194)',
     light_gray: 'rgb(112 108 117)',
     dark_gray: '',
+    bg_gray: 'rgb(242 242 243)',
     outline: '',
     transparent: 'rgba(52, 52, 52, alpha)',
 };

@@ -3,12 +3,14 @@ import {
 	SafeAreaView,
 	Text,
 	useColorScheme,
+    View,
 } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import Button from './src/components/utils/Button/Button';
 import Container from './src/components/Container/Container';
 import StyledText from './src/components/utils/Text/StyledText';
 import HomeBanner from './src/components/Home-banner/HomeBanner';
+import BookCarousel from './src/components/Book-carousel/BookCarousel';
 
 function App(): React.JSX.Element {
 	const isDarkMode = useColorScheme() === 'dark';
@@ -20,12 +22,8 @@ function App(): React.JSX.Element {
 	return (
 		<SafeAreaView>
 			<Container>
-                <Text>Hello</Text>
-				<Button variant="primary" title="Log in" />
-				<StyledText type="para">
-					My text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, sint debitis iste voluptatem officiis rerum quis possimus id, eum repellat maxime! Laborum expedita eum soluta dicta autem, quas quos reprehenderit!
-				</StyledText>
                 <HomeBanner />
+                <BookCarousel />
 			</Container>
 		</SafeAreaView>
 	);
