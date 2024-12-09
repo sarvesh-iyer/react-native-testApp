@@ -1,5 +1,8 @@
+import { CSSProperties, ReactNode, StyleHTMLAttributes } from "react";
+
 export interface TextProps {
-    children: string,
+    children: ReactNode,
     type: 'heading' | 'para' | 'big' | 'medium' | 'small',
-    weight?: 'light' | 'normal' | 'medium' | 'semibold' | 'bold' | 'extrabold'
+    weight?: 'light' | 'normal' | 'medium' | 'semibold' | 'bold' | 'extrabold',
+    style?: CSSProperties
 }

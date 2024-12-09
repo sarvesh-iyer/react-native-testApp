@@ -1,4 +1,4 @@
 export interface ButtonProps {
-    variant?: string,
+    variant?: 'primary' | 'secondary' | 'white',
     title: string
 }
