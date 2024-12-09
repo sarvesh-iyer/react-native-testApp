@@ -1,6 +1,7 @@
 import React from 'react'
 import { ContainerProps } from './type'
 import styled from 'styled-components'
+import { ScrollView } from 'react-native';
 
 
 const Container = (props: ContainerProps) => {
@@ -13,10 +14,12 @@ const Container = (props: ContainerProps) => {
 
 
     return (
-        <StyledView>
-            {props.children}
-        </StyledView>
-    )
-}
+        <ScrollView>
+            <StyledView>
+                {props.children}
+            </StyledView>
+        </ScrollView>
+    );
+};
 
-export default Container
+export default Container;

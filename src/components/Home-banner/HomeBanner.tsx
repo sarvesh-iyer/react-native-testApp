@@ -6,12 +6,13 @@ import BGImg from '../../assets/images/banner-bg.png';
 import SunTuz from '../../assets/images/sun-tzu.png';
 import BookImg from '../../assets/images/art_of_war.webp';
 import Button from '../utils/Button/Button';
+import { colors } from '../../assets/colors';
 
 const HomeBanner = () => {
 
     const StyledBox = styled.ImageBackground`
         border-radius: 16px;
-        padding: 24px;
+        padding: 28px;
         /* display: flex;
         gap: 20px; */
         overflow: hidden;
@@ -21,25 +22,31 @@ const HomeBanner = () => {
 
     return (
         <StyledBox source={BGImg} resizeMode="cover">
-            <View className="flex flex-row gap-4 max-h-[155px]">
+            <View className="flex flex-row gap-3 max-h-[155px]">
                 <Image
                     source={SunTuz}
                 />
-                <Image
-                    source={BookImg}
-                    resizeMode="contain"
-                    resizeMethod='auto'
-                    className="h-full"
-                />
+                <View className="max-w-[120px] w-full h-full">
+                    <Image
+                        source={BookImg}
+                        resizeMode="contain"
+                        className="w-full h-full"
+                    />
+                </View>
             </View>
-            <View>
-                <StyledText type="big" classname="mt-4">
-                    Chat with <StyledText type="big" weight="semibold">Sun Tzu</StyledText>
+            <View className="mt-8">
+                <StyledText type="big" classname="!text-white">
+                    Chat with <StyledText type="big" weight="semibold" classname="!text-white">Sun Tzu</StyledText>
                 </StyledText>
-                <StyledText type="para" classname="mt-5">
+                <StyledText type="para" classname="mt-3 !text-white">
                     In The Art of War, the renowned Chinese strategist Sun Tzu delves into timeless principles of warfare, strategy, leadership, execution, discipline, and ethics. His insights from over two millennia ago remain profoundly relevant today. With Chai Reader, you can now engage directly with the wisdom of Sun Tzu. Ask him questions, explore his strategies, and gain a deeper understanding of his ideas.
                 </StyledText>
-                <Button variant="white" title="Chat now" btnClass="mt-4" />
+                <Button
+                    variant="white"
+                    title="Chat now"
+                    btnClass="mt-9 mb-3 w-[60%] py-3"
+                    textClass="text-lg"
+                />
             </View>
         </StyledBox>
     );
