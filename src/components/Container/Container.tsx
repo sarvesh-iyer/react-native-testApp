@@ -2,7 +2,7 @@ import React from 'react'
 import { ContainerProps } from './type'
 import styled from 'styled-components'
 import { ScrollView } from 'react-native';
-
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const Container = (props: ContainerProps) => {
 
@@ -14,11 +14,13 @@ const Container = (props: ContainerProps) => {
 
 
     return (
-        <ScrollView>
-            <StyledView>
-                {props.children}
-            </StyledView>
-        </ScrollView>
+        <SafeAreaView>
+            <ScrollView>
+                <StyledView>
+                    {props.children}
+                </StyledView>
+            </ScrollView>
+        </SafeAreaView>
     );
 };
 
