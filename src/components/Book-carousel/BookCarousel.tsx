@@ -2,6 +2,8 @@ import { View, Text, ScrollView } from 'react-native'
 import React from 'react'
 import StyledText from '../utils/Text/StyledText';
 import BookCard from '../utils/Book-card/BookCard';
+import { AntIcon } from '../utils/Icons/AntDesignIcon';
+import { colors } from '../../assets/colors';
 
 const BookCarousel = () => {
     return (
@@ -13,9 +15,12 @@ const BookCarousel = () => {
                 >
                     Latest
                 </StyledText>
-                <Text className="text-base border border-transparent">
-                    View all
-                </Text>
+                <View className="flex flex-row items-center">
+                    <Text className="text-base border border-transparent mr-2">
+                        View all
+                    </Text>
+                    <AntIcon size={18} color={colors.icon} name='rightcircle' />
+                </View>
             </View>
 
             <View className="w-full">

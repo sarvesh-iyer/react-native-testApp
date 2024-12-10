@@ -54,7 +54,7 @@ const HomeBanner = () => {
                     <Button
                         variant="white"
                         title="Chat now"
-                        btnClass="mt-9 mb-3 w-[60%] py-3"
+                        btnClass="mt-9 mb-3 w-[60%]"
                         textClass="text-lg"
                     />
                 </View>

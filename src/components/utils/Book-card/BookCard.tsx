@@ -28,7 +28,7 @@ const BookCard = () => {
                     />
                 </View>
             </View>
-            <View className="mt-2 ml-1">
+            <View className="mt-2 ml-1 text-">
                 <Text
                     className="text-base font-medium w-36"
                     numberOfLines={2}
