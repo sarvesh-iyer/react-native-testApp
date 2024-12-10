@@ -11,6 +11,7 @@ import Container from './src/components/Container/Container';
 import StyledText from './src/components/utils/Text/StyledText';
 import HomeBanner from './src/components/Home-banner/HomeBanner';
 import BookCarousel from './src/components/Book-carousel/BookCarousel';
+import { MaterialIcon } from './src/components/utils/Icon';
 
 function App(): React.JSX.Element {
 	const isDarkMode = useColorScheme() === 'dark';
@@ -22,6 +23,9 @@ function App(): React.JSX.Element {
 	return (
 		<SafeAreaView>
 			<Container>
+                <MaterialIcon size={30} color="black" name="arrow-bottom-right-thin-circle-outline" />
+                <MaterialIcon size={40} color="black" name="instagram" />
+
                 <HomeBanner />
                 <BookCarousel />
 			</Container>
