@@ -17,12 +17,12 @@ const Button = (props: ButtonProps) => {
 	const StyledButton = variant === 'white' ?
     styled.View`
         border-radius: 8px;
-        padding: 14px 16px;
+        padding: 12px 16px;
         background-color: ${colors.base_white};
     `
     : styled.View`
 		border-radius: 8px;
-		padding: 14px 16px;
+		padding: 12px 16px;
 		background-color: ${variant === 'primary' ? colors.accent : colors.transparent};
 		border: ${variant !== 'primary' ? `1px solid ${colors.light_gray}` : 'none'};
     `;
@@ -30,15 +30,13 @@ const Button = (props: ButtonProps) => {
     styled.Text`
 		text-align: center;
 		color: ${colors.base_black};
-		font-size: 20px;
-		line-height: 20px;
+		font-size: 18px;
 		font-weight: 500;
 	`
     : styled.Text`
 		text-align: center;
 		color: ${variant === 'primary' ?  colors.base_white : colors.light_gray};
-		font-size: 20px;
-		line-height: 20px;
+		font-size: 18px;
 		font-weight: 500;
 	`;
 

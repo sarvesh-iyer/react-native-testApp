@@ -1,31 +1,33 @@
 import React from 'react';
 import {
-	SafeAreaView,
-	Text,
 	useColorScheme,
-    View,
 } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
-import Button from './src/components/utils/Button/Button';
-import Container from './src/components/Container/Container';
-import StyledText from './src/components/utils/Text/StyledText';
-import HomeBanner from './src/components/Home-banner/HomeBanner';
-import BookCarousel from './src/components/Book-carousel/BookCarousel';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Home from './src/screens/Home';
+import ViewAllBooks from './src/screens/ViewAllBooks';
+
+export type RootStackParamList = {
+    Home: undefined,
+    Viewall: {name: string}
+}
 
 function App(): React.JSX.Element {
 	const isDarkMode = useColorScheme() === 'dark';
+    const Stack = createNativeStackNavigator();
 
 	const backgroundStyle = {
 		backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
 	};
 
 	return (
-		<SafeAreaView>
-			<Container>
-                <HomeBanner />
-                <BookCarousel />
-			</Container>
-		</SafeAreaView>
+        <NavigationContainer>
+            <Stack.Navigator initialRouteName="Home">
+                <Stack.Screen name="Home" component={Home} />
+                <Stack.Screen name="Viewall" component={ViewAllBooks} />
+            </Stack.Navigator>
+        </NavigationContainer>
 	);
 }
 
