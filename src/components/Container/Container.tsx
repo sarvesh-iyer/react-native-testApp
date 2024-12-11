@@ -1,7 +1,7 @@
 import React from 'react'
 import { ContainerProps } from './type'
 import styled from 'styled-components'
-import { ScrollView } from 'react-native';
+import { ScrollView, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const Container = (props: ContainerProps) => {
@@ -11,7 +11,6 @@ const Container = (props: ContainerProps) => {
         background-color: white;
         height: 100%;
     `;
-
 
     return (
         <SafeAreaView>
