@@ -15,12 +15,12 @@ const Button = (props: ButtonProps) => {
 
 
 	const StyledButton = variant === 'white' ?
-    styled.View`
+    styled.Pressable`
         border-radius: 8px;
         padding: 12px 16px;
         background-color: ${colors.base_white};
     `
-    : styled.View`
+    : styled.Pressable`
 		border-radius: 8px;
 		padding: 12px 16px;
 		background-color: ${variant === 'primary' ? colors.accent : colors.transparent};
@@ -41,7 +41,7 @@ const Button = (props: ButtonProps) => {
 	`;
 
 	return (
-		<StyledButton className={btnClass}>
+		<StyledButton className={btnClass} {...props}>
 			<SyledText className={textClass}>{title}</SyledText>
 		</StyledButton>
 	);
