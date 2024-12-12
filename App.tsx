@@ -29,9 +29,9 @@ function App(): React.JSX.Element {
 			<NavigationContainer>
 				<Stack.Navigator
 					initialRouteName="Home"
-					screenOptions={{
-						header: (props) => <NavigationBar {...props} />
-					}}
+					// screenOptions={{
+					// 	header: (props) => <NavigationBar {...props} />
+					// }}
 				>
 					<Stack.Screen name="Home" component={Home} />
 					<Stack.Screen name="Viewall" component={ViewAllBooks} />

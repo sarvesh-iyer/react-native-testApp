@@ -28,7 +28,7 @@ const HomeBanner = () => {
 
     return (
         <TouchableWithoutFeedback onPress={handleBtnClick}>
-            <View>
+            <View className="pt-2">
                 <View className="px-1">
                     <StyledText
                         type="big"
