@@ -10,6 +10,7 @@ const Container = (props: ContainerProps) => {
         padding: 8px;
         background-color: white;
         height: 100%;
+        margin-top: -6px;
     `;
 
     return (

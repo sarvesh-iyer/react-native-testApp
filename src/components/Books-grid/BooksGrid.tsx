@@ -10,7 +10,7 @@ const BooksGrid = () => {
         flex-wrap: wrap;
         align-items: flex-start;
         gap: 20px;
-        padding-top: 8px;
+        padding-top: 16px;
         padding-bottom: 60px;
         /* border: 1px solid green; */
     `;

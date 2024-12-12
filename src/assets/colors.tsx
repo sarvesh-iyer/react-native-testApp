@@ -9,5 +9,5 @@ export const colors = {
     bg_gray: 'rgb(242 242 243)',
     outline: '',
     transparent: 'rgba(52, 52, 52, alpha)',
-    icon: "rgb(112, 108, 117)"
+    icon: 'rgb(112, 108, 117)',
 };
